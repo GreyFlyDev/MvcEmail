@@ -47,6 +47,11 @@ namespace Email.Controllers
             return View(model);
         }
 
+        public ActionResult Sent()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();
