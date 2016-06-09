@@ -28,17 +28,6 @@ namespace Email.Controllers
 
                 using (var smtp = new SmtpClient())
                 {
-                    var credentials = new NetworkCredential
-                    {
-                        UserName = "gregnnylf94@gmail.com",
-                        Password = "Enjoilif3!"
-                    };
-
-                    smtp.Credentials = credentials;
-                    smtp.Host = "smtp-relay.gmail.com";
-                    smtp.Port = 25;
-                    smtp.EnableSsl = true;
-
                     await smtp.SendMailAsync(message);
                     return RedirectToAction("Sent");
                 }
