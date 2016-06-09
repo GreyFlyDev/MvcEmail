@@ -13,6 +13,6 @@ namespace Email.Models
         [Required, Display(Name ="Your Email")]
         public string FromEmail { get; set; }
         [Required]
-        public string message { get; set; }
+        public string Message { get; set; }
     }
 }
